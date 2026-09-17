@@ -4,9 +4,50 @@ Astro를 학습하며 블로그를 만들어 보는 연습 저장소입니다.
 
 Markdown 기반의 정적 블로그를 먼저 완성하고, 이후 API 연동과 임베딩 기반 검색으로 확장하는 것을 목표로 합니다.
 
+## 개발 환경
+
+| 항목 | 구성 |
+| --- | --- |
+| 프레임워크 | Astro 7.3.2 |
+| 런타임 | Node.js 22.12.0 이상 · 현재 개발 환경: v24.21.0 |
+| 패키지 매니저 | npm 11.19.0 |
+| 모듈 형식 | ES Modules |
+| 에디터 | Visual Studio Code |
+
+### 설치 및 실행
+
+프로젝트 루트에서 의존성을 설치합니다.
+
+```bash
+npm ci
+```
+
+개발 서버를 백그라운드로 실행합니다.
+
+```bash
+npm run dev -- --background
+```
+
+서버 상태, 로그 확인 및 종료:
+
+```bash
+npm run dev -- status
+npm run dev -- logs
+npm run dev -- stop
+```
+
+### 빌드 및 미리보기
+
+```bash
+npm run build
+npm run preview
+```
+
+`build`는 배포용 파일을 생성하고, `preview`는 빌드 결과를 로컬에서 확인합니다.
+
 ## 학습 목표
 
-- [ ] Astro 프로젝트 생성 및 개발 환경 구성
+- [x] Astro 프로젝트 생성 및 개발 환경 구성
 - [ ] 파일 기반 라우팅 이해
 - [ ] 컴포넌트와 공통 레이아웃 구성
 - [ ] Markdown과 Content Collections로 게시글 관리
